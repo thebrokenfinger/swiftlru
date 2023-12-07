@@ -17,10 +17,5 @@ jobs:
         with:
           ruby-version: 2.7
 
-      - name: Install dependencies
-        run: |
-          gem install bundler
-          bundle install
-
       - name: Run tests
         run: rake test
